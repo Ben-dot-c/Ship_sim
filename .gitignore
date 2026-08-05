@@ -46,5 +46,3 @@ Thumbs.db
 # Misc
 .env
 .local
-
-# Note: .md files (like PROJECT.md) are tracked in git

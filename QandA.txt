@@ -1,0 +1,16 @@
+=== Folder Structure Session (2026-08-05) ===
+
+Q: Why separate .cpp from .h files? What's the benefit and cost?
+A: Code clarity and modularity.
+
+Q: Should build artifacts live in src/ or somewhere separate? What problems might mixed locations cause?
+A: Mixed locations could cause errors, but separate locations make file path handling easier.
+
+Q: One .cpp/.h pair per class, or grouped together? What tradeoffs matter?
+A: One pair per class — easier to edit each part independently. Possible downside: compile time / file count.
+
+Q: Where should main() live?
+A: In its own file, thin, like Python's if __name__ == "__main__" pattern — orchestration only.
+
+Q: Create empty placeholder files now, or wait until the classes are designed?
+A: Create them now — can't reference/call something that doesn't exist yet.

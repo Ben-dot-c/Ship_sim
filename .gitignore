@@ -1,0 +1,50 @@
+# Build directories
+build/
+Build/
+out/
+dist/
+
+# CMake cache and files
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+
+# IDEs
+.vscode/
+.vs/
+*.vcxproj.user
+*.xcworkspace/
+.idea/
+
+# Object files and libraries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.md
+
+# Compiled Python
+*.pyc
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*~
+.#*
+
+# Misc
+.env
+.local
+
+# Note: .md files (like PROJECT.md) are tracked in git

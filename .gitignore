@@ -28,6 +28,7 @@ cmake_install.cmake
 *.exe
 *.out
 *.md
+*.drawio
 
 # Compiled Python
 *.pyc
@@ -43,6 +44,13 @@ Thumbs.db
 *~
 .#*
 
+# External libraries
+lib/
+
+# Save data
+Save_Games/
+
 # Misc
 .env
 .local
+QandA.txt

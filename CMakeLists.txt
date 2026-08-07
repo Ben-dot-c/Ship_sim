@@ -9,6 +9,12 @@ add_executable(main
     src/Crew.cpp
     src/Room.cpp
     src/Ship.cpp
+    src/Savegame.cpp
+    src/Stats/Repair_stat.cpp
+    src/Stats/Strength_stat.cpp
+    src/Stats/Medicine_stat.cpp
+    src/Stats/Weapons_stat.cpp
+    src/Stats/Intelligence_stat.cpp
 )
 
-target_include_directories(main PRIVATE include)
+target_include_directories(main PRIVATE include lib/json/single_include)

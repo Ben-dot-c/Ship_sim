@@ -11,9 +11,9 @@ Save::Save(std::string filename) {
 void Save::save_game(){
     json data;
     data["Strength"] = strength.strength[0].second;
-    data["intelligence"] = intelligence.intelligence[0].second;
-    data["weapons"] = weapons.weapons[0].second;
-    data["repair"] = repair.repair[0].second;
+    data["Intelligence"] = intelligence.intelligence[0].second;
+    data["Weapons"] = weapons.weapons[0].second;
+    data["Repair"] = repair.repair[0].second;
     data["Medicine"] = medicine.medicine[0].second;
 
     std::filesystem::create_directories("Save_Games");

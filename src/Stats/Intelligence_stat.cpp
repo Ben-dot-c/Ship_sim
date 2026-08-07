@@ -5,6 +5,6 @@
 
 Intelligence_stat::Intelligence_stat(std::vector<std::pair<std::string, int>> intelligence) {
     this->intelligence = {
-        {"Intelligence ", 20} //int to be turned into a variable from saved data at a later date
+        {"Intelligence", 20} //int to be turned into a variable from saved data at a later date
     };
 }

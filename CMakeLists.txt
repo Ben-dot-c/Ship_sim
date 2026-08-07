@@ -11,6 +11,7 @@ add_executable(main
     src/Ship.cpp
     src/Savegame.cpp
     src/Loadgame.cpp
+    src/Charactersheet.cpp
     src/Stats/Repair_stat.cpp
     src/Stats/Strength_stat.cpp
     src/Stats/Medicine_stat.cpp

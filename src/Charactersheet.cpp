@@ -3,8 +3,8 @@
 #include <cstdio>
 
 Char_sheet::Char_sheet(std::string) {
-
 }
+
 void Char_sheet::printMessage() {
     Load loader("filler");
     Load::stat_holder result = loader.load_game();

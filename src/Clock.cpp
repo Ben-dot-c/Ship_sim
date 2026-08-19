@@ -7,15 +7,30 @@ Clock::Clock() {  //constructor
 }
 
 Clock::~Clock() { //destructor
+    stop();
+    std::cout << "clock stopped";
+}
+
+void Clock::process_loop() {
+    while (!stop_request)
+    {
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000/256));
+        tick_count++;
+
+        //std::cout << "Thread logic running\n";
+        //std::cout << tick_count;
+    }
+}
+
+int Clock::get_tick() const {
+    int current_tick = tick_count;
+    return current_tick;
+}
+
+void Clock::stop() {
     stop_request = true;
     if (clock_thread.joinable())
     {
         clock_thread.join();
     }
-    std::cout << "clock stoped";
-}
-
-void Clock::process_loop() {
-    std::cout << "Thread logic running\n";
-    std::this_thread::sleep_for(std::chrono::milliseconds(4));
 }

@@ -4,6 +4,7 @@
 #include "Stats/Medicine_stat.h"
 #include "Stats/Repair_stat.h"
 #include "Stats/Weapons_stat.h"
+#include "Clock.h"
 
 class Save {
 public:
@@ -14,5 +15,5 @@ public:
     Medicine_stat medicine;
     Repair_stat repair;
 
-    void save_game();
+    void save_game(Clock* clock);
 };

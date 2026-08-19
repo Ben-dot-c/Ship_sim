@@ -10,7 +10,7 @@ int main() {
     Save mysaver("");
     Load myloader("");
     Char_sheet print_sheet("");
-    Clock Clock;
+    Clock game_clock;
     int mynum1;
 
     myloader.load_game();
@@ -28,6 +28,7 @@ int main() {
         std::cout << "thanks for playing\n";
     }
     
-    mysaver.save_game();
+    game_clock.stop();
+    mysaver.save_game(&game_clock);
     return 0;
 }
